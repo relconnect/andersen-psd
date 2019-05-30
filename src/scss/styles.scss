@@ -1,0 +1,147 @@
+/*
+   Import partials below
+*/
+@import "normalize";
+
+.main__screen {
+  background-image: url("../img/ap-ui.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  .header {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    align-items: center;
+
+    .logo {
+      // height: 100px;
+      // width: 100px;
+      flex-basis: 185px;
+      padding-left: 20px;
+      box-sizing: border-box;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-basis: 640px;
+      justify-content: space-between;
+
+      &__item {
+        a {
+          font-size: 20px;
+          font-family: "Sansation";
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          transition: all 0.2s linear;
+
+          &:hover {
+            color: #167284;
+          }
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-basis: 175px;
+      justify-content: center;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27px;
+        height: 27px;
+        border: 1px solid #ffff;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+          border: 1px solid #167284;
+        }
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  padding-top: 128px;
+
+  &__content {
+    width: 540px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    padding-top: 47px;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__text {
+    font-size: 48px;
+    font-family: "Sansation";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-family: "Sansation";
+    color: rgba(255, 255, 255, 0.702);
+    margin-bottom: 40px;
+    text-align: center;
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 112px;
+    border: 2px solid rgba(255, 255, 255, 0.702);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s linear;
+    font-size: 14px;
+    font-family: "Sansation";
+    text-transform: uppercase;
+
+    &--text {
+      margin: 0px;
+    }
+
+    &:hover {
+      color: #167284;
+      border: 2px solid #167284;
+    }
+  }
+}
