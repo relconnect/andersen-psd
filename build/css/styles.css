@@ -458,6 +458,35 @@ template {
   display: flex;
   justify-content: center;
   padding-top: 128px;
+  position: relative;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 30px;
+  background-image: url("../img/left-arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 50px;
+  top: 220px;
+  cursor: pointer;
+}
+
+.slider:after {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 30px;
+  right: 50px;
+  background-image: url("../img/left-arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 220px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .slider__content {
@@ -475,7 +504,7 @@ template {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 37px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -487,10 +516,13 @@ template {
   text-align: center;
   width: 340px;
   margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: 1.5;
 }
 
 .slider__btn {
   display: flex;
+  position: absolute;
   justify-content: center;
   width: 112px;
   border: 2px solid rgba(255, 255, 255, 0.702);
@@ -502,6 +534,10 @@ template {
   font-size: 14px;
   font-family: "Sansation";
   text-transform: uppercase;
+  bottom: -20px;
+  right: 50%;
+  -webkit-transform: translate(58px);
+  transform: translate(58px);
 }
 
 .slider__btn--text {
@@ -511,4 +547,75 @@ template {
 .slider__btn:hover {
   color: #167284;
   border: 2px solid #167284;
+}
+
+.screen-2 {
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.screen-2__wrap {
+  display: flex;
+}
+
+.screen-2__content {
+  width: 50%;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.screen-2__content .title {
+  font-size: 24px;
+  font-family: "Sansation";
+  color: #252525;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.screen-2__content .title:after {
+  content: "";
+  height: 1px;
+  background-color: black;
+  bottom: -7px;
+  width: 100%;
+  position: absolute;
+}
+
+.screen-2__content .text {
+  font-size: 14.22px;
+  font-family: "Myriad Pro";
+  color: black;
+  line-height: 1.447;
+}
+
+.screen-2__content .read-more__btn {
+  border-radius: 2px;
+  background-color: #05a0af;
+  width: 161px;
+  height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.screen-2__content .read-more__btn a {
+  font-size: 10px;
+  font-family: "NEOTERIC";
+  color: #f7f7f7;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: block;
+  text-decoration: none;
+}
+
+.screen-2__img {
+  width: 50%;
+}
+
+.screen-2__img img {
+  width: 100%;
+  display: block;
 }
