@@ -562,6 +562,7 @@ template {
   width: 50%;
   padding: 40px;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .screen-2__content .title {
@@ -618,4 +619,295 @@ template {
 .screen-2__img img {
   width: 100%;
   display: block;
+}
+
+.screen__title {
+  background-color: #373737;
+}
+
+.screen__title-text {
+  font-size: 40px;
+  font-family: "Sansation";
+  color: #f7f7f7;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.screen__title-text:before {
+  content: url("../img/line-left.png");
+  position: absolute;
+  right: calc(50% + 150px);
+}
+
+.screen__title-text:after {
+  content: url("../img/line-right.png");
+  position: absolute;
+  left: calc(50% + 150px);
+}
+
+.screen__title-text--dark {
+  color: #656464;
+  position: relative;
+}
+
+.screen__title-text--dark:before {
+  content: url("../img/clients-line-left.png");
+  position: absolute;
+  right: calc(50% + 150px);
+}
+
+.screen__title-text--dark:after {
+  content: url("../img/clients-line-right.png");
+  position: absolute;
+  left: calc(50% + 150px);
+}
+
+.screen__title--white {
+  background-color: #fefefe;
+}
+
+.screen-3 .service__block {
+  display: flex;
+}
+
+.screen-3 .service__block .service__item {
+  padding: 0 10px;
+  flex: 1 1 auto;
+  background-color: #3d3d3d;
+  justify-content: center;
+  height: 556px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+
+.screen-3 .service__block .service__item:hover {
+  background-color: #097e89;
+}
+
+.screen-3 .service__block .service__item-img {
+  margin-bottom: 50px;
+}
+
+.screen-3 .service__block .service__item-img img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.screen-3 .service__block .service__item-title p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Sansation";
+  color: #f7f7f7;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.screen-3 .service__block .service__item-description p {
+  font-size: 14px;
+  font-family: "Sansation";
+  color: #f7f7f7;
+  line-height: 1.286;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.screen-3 .service__block .service__item-btn a {
+  border-radius: 2px;
+  background-color: #959595;
+  border: unset;
+  width: 141px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Sansation";
+  color: #f7f7f7;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+}
+
+.screen-3 .service__block .service__item-btn a:hover {
+  cursor: pointer;
+}
+
+.screen-4 .feedback__block {
+  background-color: #3d3d3d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.screen-4 .feedback__block .feedback__controls {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.screen-4 .feedback__block .feedback__controls .text {
+  margin-bottom: 40px;
+}
+
+.screen-4 .feedback__block .feedback__controls .text p {
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Sansation";
+  color: #cdc8c8;
+  line-height: 1.444;
+  text-align: center;
+  width: 70%;
+}
+
+.screen-4 .feedback__block .count {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Sansation";
+  color: #cdc8c8;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.screen-4 .feedback__block .count span:after {
+  content: url("../img/feedback-right-arrow.png");
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.screen-4 .feedback__block .count span:before {
+  content: url("../img/feedback-left-arrow.png");
+  position: absolute;
+  left: 0px;
+  top: -5px;
+}
+
+.screen-4 .review__block {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.screen-4 .review__block .person {
+  max-width: 202px;
+  position: relative;
+}
+
+.screen-4 .review__block .person .person__img {
+  max-width: 202px;
+}
+
+.screen-4 .review__block .person .person__img img {
+  width: 100%;
+  display: block;
+}
+
+.screen-4 .review__block .person .info__wrap {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.screen-4 .review__block .person .info__wrap .date {
+  background-color: white;
+  width: 43px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Sansation";
+  color: #272727;
+}
+
+.screen-4 .review__block .person .info__wrap .person__info {
+  height: 33px;
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Sansation";
+  color: #272727;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.screen-5 {
+  background-color: #fbfbfb;
+  padding-bottom: 100px;
+}
+
+.screen-5 .screen-5__wrap .partners {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.screen-5 .screen-5__wrap .partners .partner__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 25%;
+  height: 150px;
+}
+
+.screen-5 .screen-5__wrap .partners .partner__item img {
+  display: block;
+  max-width: 100%;
+}
+
+.form__wrap {
+  background-color: #097e89;
+  display: flex;
+}
+
+.form__text {
+  flex: 1 1 35%;
+  padding-left: 40px;
+  height: 150px;
+}
+
+.form__text h2 {
+  font-size: 37.368px;
+  font-family: "Sansation";
+  color: white;
+}
+
+.form__text p {
+  font-size: 15px;
+  font-family: "Sansation";
+  color: rgba(255, 255, 255, 0.702);
+  line-height: 1.739;
+}
+
+.form .form__block {
+  flex: 1 1 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

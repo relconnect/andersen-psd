@@ -196,6 +196,7 @@
     width: 50%;
     padding: 40px;
     background-color: #fff;
+    box-sizing: border-box;
 
     .title {
       font-size: 24px;
@@ -252,5 +253,316 @@
       width: 100%;
       display: block;
     }
+  }
+}
+
+.screen__title {
+  background-color: rgb(55, 55, 55);
+
+  &-text {
+    font-size: 40px;
+    font-family: "Sansation";
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &:before {
+      content: url("../img/line-left.png");
+      position: absolute;
+      right: calc(50% + 150px);
+    }
+
+    &:after {
+      content: url("../img/line-right.png");
+      position: absolute;
+      left: calc(50% + 150px);
+    }
+
+    &--dark {
+      color: #656464;
+      position: relative;
+
+      &:before {
+        content: url("../img/clients-line-left.png");
+        position: absolute;
+        right: calc(50% + 150px);
+      }
+
+      &:after {
+        content: url("../img/clients-line-right.png");
+        position: absolute;
+        left: calc(50% + 150px);
+      }
+    }
+  }
+
+  &--white {
+    background-color: #fefefe;
+  }
+}
+
+.screen-3 {
+  .service__block {
+    display: flex;
+
+    .service__item {
+      padding: 0 10px;
+      flex: 1 1 auto;
+      background-color: #3d3d3d;
+      justify-content: center;
+      height: 556px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-color: #097e89;
+      }
+
+      &-img {
+        margin-bottom: 50px;
+
+        img {
+          max-width: 100%;
+          margin: 0 auto;
+          display: block;
+        }
+
+        // display: block;
+      }
+
+      &-title {
+        p {
+          text-align: center;
+          font-size: 24px;
+          font-family: "Sansation";
+          color: rgb(247, 247, 247);
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+      }
+
+      &-description {
+        p {
+          font-size: 14px;
+          font-family: "Sansation";
+          color: rgb(247, 247, 247);
+          line-height: 1.286;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 30px;
+        }
+      }
+
+      &-btn {
+        a {
+          border-radius: 2px;
+          background-color: rgb(149, 149, 149);
+          border: unset;
+          width: 141px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-family: "Sansation";
+          color: rgb(247, 247, 247);
+          line-height: 1.5;
+          text-align: center;
+          margin: 0 auto;
+          display: block;
+          text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen-4 {
+  .feedback__block {
+    background-color: #3d3d3d;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+
+    .feedback__controls {
+      width: 34%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .text {
+        margin-bottom: 40px;
+
+        p {
+          margin: 0 auto;
+          font-size: 18px;
+          font-family: "Sansation";
+          color: rgb(205, 200, 200);
+          line-height: 1.444;
+          text-align: center;
+          width: 70%;
+        }
+      }
+    }
+
+    .count {
+      text-align: center;
+      font-size: 14px;
+      font-family: "Sansation";
+      color: rgb(205, 200, 200);
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
+
+      span {
+        &:after {
+          content: url("../img/feedback-right-arrow.png");
+          position: absolute;
+          top: -5px;
+          right: 0px;
+        }
+
+        &:before {
+          content: url("../img/feedback-left-arrow.png");
+          position: absolute;
+          left: 0px;
+          top: -5px;
+        }
+      }
+    }
+  }
+
+  .review__block {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    .person {
+      max-width: 202px;
+      position: relative;
+
+      .person__img {
+        max-width: 202px;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .info__wrap {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        box-sizing: border-box;
+        justify-content: space-between;
+
+        .date {
+          background-color: rgb(255, 255, 255);
+          // position: absolute;
+          width: 43px;
+          height: 33px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          font-family: "Sansation";
+          color: rgb(39, 39, 39);
+        }
+
+        .person__info {
+          height: 33px;
+          width: 135px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          // align-items: center;
+          background-color: rgb(255, 255, 255);
+          font-size: 12px;
+          font-family: "Sansation";
+          color: rgb(39, 39, 39);
+          padding-left: 10px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+
+.screen-5 {
+  background-color: #fbfbfb;
+  padding-bottom: 100px;
+
+  .screen-5__wrap {
+    .partners {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      background-color: #ffffff;
+
+      .partner__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 25%;
+        height: 150px;
+
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  &__wrap {
+    background-color: #097e89;
+    display: flex;
+  }
+
+  &__text {
+    flex: 1 1 35%;
+    padding-left: 40px;
+    height: 150px;
+
+    h2 {
+      font-size: 37.368px;
+      font-family: "Sansation";
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      font-size: 15px;
+      font-family: "Sansation";
+      color: rgba(255, 255, 255, 0.702);
+      line-height: 1.739;
+    }
+  }
+
+  .form__block {
+    flex: 1 1 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
